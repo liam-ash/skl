@@ -1,9 +1,9 @@
 #!/bin/bash
 
 SCRIPT_NAME="skl.py"
+COMMAND_NAME="skl"  # le nom que tu veux utiliser dans le terminal
 
 SCRIPT_PATH="$(pwd)/$SCRIPT_NAME"
-
 INSTALL_DIR="/usr/local/bin"
 
 if [[ $(id -u) -ne 0 ]]; then
@@ -11,8 +11,8 @@ if [[ $(id -u) -ne 0 ]]; then
     exit 1
 fi
 
-cp "$SCRIPT_PATH" "$INSTALL_DIR/$(basename $SCRIPT_NAME)"
+cp "$SCRIPT_PATH" "$INSTALL_DIR/$COMMAND_NAME"
+chmod +x "$INSTALL_DIR/$COMMAND_NAME"
 
-chmod +x "$INSTALL_DIR/$(basename $SCRIPT_NAME)"
+echo "تم التثبيت بنجاح! يمكنك الآن تشغيل '$COMMAND_NAME' من أي مكان."
 
-echo "تم التثبيت بنجاح! يمكنك الآن تشغيل $SCRIPT_NAME من أي مكان."
