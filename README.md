@@ -21,7 +21,7 @@
 بعد التثبيت، فقط افتح التيرمنال واكتب:
 
 ```bash
-skl.py
+skl
 ```
 
 ## التثبيت
@@ -38,7 +38,7 @@ sudo ./install.sh
 ### إلغاء التثبيت
 
 ```bash
-sudo rm /usr/local/bin/skl.py
+sudo rm /usr/local/bin/skl
 ```
 
 ## مثال
