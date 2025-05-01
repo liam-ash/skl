@@ -64,4 +64,4 @@ sudo rm /usr/local/bin/skl
 ---
 
 ## good by onii-chan 🫡🫡🫡
-# Developed by Zeini-sama 🫰🏼🫰🏼
+# Developed by Zeini-sama 🫰🏼🫰🏼 👌
